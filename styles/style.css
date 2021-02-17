@@ -39,6 +39,10 @@ a {
     display: inline-block;
 }
 
+h1 a, h3 a, button a {
+    margin: 0;
+}
+
 .sign-in {
     width: 75px;
     height: 30px;
@@ -87,13 +91,13 @@ input {
 }
 
 .search-buttons {
-    width: 320px;
+    width: 350px;
     display: flex;
     justify-content: space-around;
 }
 
-button {
-    width: 150px;
+.search-buttons a {
+    width: 160px;
     height: 40px;
 }
 
@@ -160,12 +164,14 @@ input:focus, button:focus {
     outline: none;
 } 
 
-button {
-    border: none;
+.search-buttons a {
+    background: rgb(239, 239, 239);
     border-radius: 5px;
-    font-size: 1em;
+    text-align: center;
+    line-height: 35px;
 }
 
-button:hover {
+.search-buttons a:hover {
     border: 1px solid rgba(175, 175, 175, 0.8);
 }
+
